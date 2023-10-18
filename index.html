@@ -20,7 +20,7 @@
       <div class="weather-app">
         <form class="search-form" id="search-form">
           <div class="row">
-            <div class="col-9">
+            <div class="col-6">
               <input
                 type="search"
                 placeholder="Type a city.."
@@ -34,48 +34,37 @@
               <input
                 type="submit"
                 value="Search"
-                class="form-control btn btn-primary shadow-sm"
+                class="form-control btn btn-primary shadow-sm w-100"
               />
+            </div>
+            <div class="col-3">
+              <button
+                class="btn btn-success w-100"
+                id="current-location-button"
+              >
+                Current
+              </button>
             </div>
           </div>
         </form>
-        <h1 id="city">
-          Sydney NSW, Australia
-        </h1>
+        <h1 id="city"></h1>
         <ul>
           <li id="date"></li>
-          <li>
-            Partly Cloudy
-          </li>
+          <li id="description"></li>
         </ul>
         <div class="row">
           <div class="col-6">
             <div class="clearfix">
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                alt="Cloudy icon"
-                class="weather-icon float-left"
-              />
               <div class="float-left">
-                <span class="temperature" id="temperature">19</span
-                ><span class="units">
-                  <a href="#" id="celsius-link">°C</a> |
-                  <a href="#" id="fahrenheit-link">°F</a>
-                </span>
+                <span class="temperature" id="temperature"></span
+                ><span class="units">°C</span>
               </div>
             </div>
           </div>
           <div class="col-6">
             <ul>
-              <li>
-                Precipitation: 0%
-              </li>
-              <li>
-                Humidity: 77%
-              </li>
-              <li>
-                Wind: 8 km/h
-              </li>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
             </ul>
           </div>
         </div>

@@ -1,9 +1,13 @@
 body {
   font-family: arial, sans-serif;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDGH8PkkDED5d0AOLvojqxUEh6TBLOi9lhZzMXSYLPg&s);
+  background-size: cover;
+  
+  background-repeat: no-repeat;
 }
 
 h1 {
-  color: #7c7c7c;
+  color: white;
   font-size: 24px;
   font-weight: 100;
   line-height: 28px;
@@ -16,7 +20,7 @@ ul {
 }
 
 li {
-  color: #7c7c7c;
+  color: white;
   font-size: 16px;
   font-weight: 100;
   height: 19px;
@@ -30,6 +34,8 @@ li {
   margin: 20px auto;
   border-radius: 10px;
   max-width: 600px;
+  background-color: black;
+  
 }
 
 .weather-icon {
@@ -39,7 +45,7 @@ li {
 }
 
 .temperature {
-  color: rgb(33, 33, 33);
+  color: white;
   font-size: 64px;
   font-weight: 400;
   line-height: 1;
@@ -48,8 +54,13 @@ li {
 .units {
   position: relative;
   top: -34px;
+  color: white;
 }
 
 .search-form {
   margin-bottom: 20px;
+}
+
+.col-6{
+  color: white;
 }

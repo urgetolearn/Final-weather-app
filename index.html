@@ -8,14 +8,18 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <title>Weather App</title>
   </head>
 
   <body>
+    <nav class="navbar navbar-dark bg-darker">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">Weather App</span>
+      </div>
+    </nav>
     <div class="container">
       <div class="weather-app">
         <form class="search-form" id="search-form">
@@ -27,21 +31,18 @@
                 autofocus="on"
                 autocomplete="off"
                 id="city-input"
-                class="form-control shadow-sm"
-              />
+                class="form-control shadow-sm" />
             </div>
             <div class="col-3">
               <input
                 type="submit"
                 value="Search"
-                class="form-control btn btn-primary shadow-sm w-100"
-              />
+                class="form-control btn btn-primary shadow-sm w-100" />
             </div>
             <div class="col-3">
               <button
                 class="btn btn-success w-100"
-                id="current-location-button"
-              >
+                id="current-location-button">
                 Current
               </button>
             </div>
